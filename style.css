@@ -1,0 +1,138 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form,
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social-media img {
+  height: 2rem;
+}
+.container {
+  padding: 3rem 3rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.split > * + * {
+  /* margin: 0 0 0 2.5rem; */
+  margin: 2rem 0 0 0;
+}
+.split-big > * + * {
+  /* margin: 0 0 0 2.5rem; */
+  margin: 4rem 0 0 0;
+}
+
+.content {
+  max-width: 80%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 400;
+}
+button {
+  padding: 0.8rem 6rem;
+  border-radius: 40px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.logo {
+  width: 50%;
+}
+@media (min-width: 40rem) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  body {
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
